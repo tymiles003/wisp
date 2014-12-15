@@ -145,8 +145,110 @@
 		box-shadow:0px -3px 0px rgba(50,50,50, 0.53) inset;
 		}
 
+/*pictures*/
+.fatima_picture {
+	width: 100px;
+	height: 100px;
+	float: right;
+	background-image: url('https://s3-us-west-2.amazonaws.com/wispnet/fatima_picture.png');  
+	background-position: center;
+	background-size: cover;
+	display: inline;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 90px;
+  	margin-top: 80px;
+}	
+
+.alya_picture {
+	width: 100px;
+	height: 100px;
+	float: right;
+	background-image: url('https://s3-us-west-2.amazonaws.com/wispnet/alya_pic.png');  
+	background-position: center;
+	background-size: cover;
+	display: inline;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 90px;
+  	margin-top: 80px;
+}	
+
+.anna_picture {
+	width: 100px;
+	height: 100px;
+	float: right;
+	background-image: url('https://s3-us-west-2.amazonaws.com/wispnet/anna_pic.png');  
+	background-position: center;
+	background-size: cover;
+	display: inline;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 90px;
+  	margin-top: 80px;
+}	
+
+.debra_picture {
+	width: 100px;
+	height: 100px;
+	float: right;
+	background-image: url('https://s3-us-west-2.amazonaws.com/wispnet/debra_pic.png');  
+	background-position: center;
+	background-size: cover;
+	display: inline;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 90px;
+  	margin-top: 80px;
+}	
+
+.julia_picture {
+	width: 100px;
+	height: 100px;
+	float: right;
+	background-image: url('https://s3-us-west-2.amazonaws.com/wispnet/julia_pic.png');  
+	background-position: center;
+	background-size: cover;
+	display: inline;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 90px;
+  	margin-top: 80px;
+}	
+
+.kenesa_picture {
+	width: 100px;
+	height: 100px;
+	float: right;
+	background-image: url('https://s3-us-west-2.amazonaws.com/wispnet/kenesa_pic.jpg');  
+	background-position: center;
+	background-size: cover;
+	display: inline;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 90px;
+  	margin-top: 80px;
+}	
+.elena_picture {
+	width: 100px;
+	height: 100px;
+	float: right;
+	background-image: url('https://s3-us-west-2.amazonaws.com/wispnet/elena_pic.png');  
+	background-position: center;
+	background-size: cover;
+	display: inline;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 90px;
+  	margin-top: 80px;
+}	
+
 /*footer*/
 
 	footer .page-header h3{
 			padding-top:100px !important;
+			font-family: 'Josefin Sans:600', sans-serif;
 		}
+
+	.foot_text {
+		font-size: 20px;
+		color: #fff;
+		font-family: 'Josefin Sans:600', sans-serif;
+	}
+
+	.second_row {
+		padding-left: 80px;
+	}
