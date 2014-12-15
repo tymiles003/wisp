@@ -85,23 +85,30 @@
 
 		.lead {
 			font-family: 'Josefin Sans:600', sans-serif;
-			font-size: 40px;
+			font-size: 80px;
 		}
 
 		.goals {
 			font-family: 'Josefin Sans:600', sans-serif;
 			font-size: 20px;
-			list-style: None;
+			
 
 		}
 
 		li{
-			list-style: None;
+			
 			font-size: 20px;
+		}
+
+		.panel {
+			list-style: None;
+			font-family: 'Josefin Sans:600', sans-serif;
 		}
 		
 		.mission {
 			padding-bottom: 100px;
+			padding-left: 30px;
+			font-family: 'Josefin Sans:600', sans-serif;
 		}
 
 
