@@ -11,6 +11,8 @@
 
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:600);
 
+
+
 /*header*/
 
   h1,h2,h3,h4,h5,h6{
@@ -31,6 +33,10 @@
 			padding-top:220px;
 			font-family: 'Josefin Sans:600', sans-serif;
 
+	  }
+
+	  i {
+	  	color:#fff;
 	  }
 
 /*button*/
@@ -90,7 +96,8 @@
 		}
 
 		li{
-		list-style: None;	
+			list-style: None;
+			font-size: 20px;
 		}
 		
 		.mission {
