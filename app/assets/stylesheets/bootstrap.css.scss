@@ -207,15 +207,17 @@
 .julia_picture {
 	width: 100px;
 	height: 100px;
-	float: right;
+	float: center;
 	background-image: url('https://s3-us-west-2.amazonaws.com/wispnet/julia_pic.png');  
 	background-position: center;
 	background-size: cover;
 	display: inline;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 90px;
-  	margin-top: 80px;
+  	
 }	
+
+
 
 .kenesa_picture {
 	width: 100px;
