@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get 'about' => "pages#about"
   get 'contact' => "pages#contact"
 
+
+constraints subdomain: 'www' do
+    get ':any', to: redirect(subdomain: nil, path: '/%{any}'), any: /.*/
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
