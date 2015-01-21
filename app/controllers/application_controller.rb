@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
 
   before_filter :https_redirect
 
+  before_filter :redirect_subdomain
+
+	def redirect_subdomain
+	  if request.host == 'www.wisp-net.org'
+	    redirect_to 'https://wisp-net.org' + request.fullpath
+	  end
+	end
 
 private
 
