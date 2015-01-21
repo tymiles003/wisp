@@ -11,13 +11,15 @@ Rails.application.routes.draw do
 #    get ':any', to: redirect(subdomain: nil, path: '/%{any}'), any: /.*/
 #  end
 
-before_filter :redirect_subdomain
+
 
 def redirect_subdomain
   if request.host == 'www.wisp-net.org'
     redirect_to 'https://wisp-net.org' + request.fullpath
   end
 end
+
+before_filter :redirect_subdomain
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
