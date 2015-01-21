@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   get 'contact' => "pages#contact"
 
 
-#constraints subdomain: 'www' do
-#    get ':any', to: redirect(subdomain: nil, path: '/%{any}'), any: /.*/
-#  end
+constraints subdomain: 'www' do
+    get ':any', to: redirect(subdomain: nil, path: '/%{any}'), any: /.*/
+  end
 
 
 
