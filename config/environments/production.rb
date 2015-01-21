@@ -84,6 +84,6 @@ Rails.application.configure do
   #for devise/heroku
   config.action_mailer.default_url_options = { :host => 'http://nameless-citadel-6179.herokuapp.com/' }
 
-  #force ssl
-  config.force_ssl = true
+  
+
 end
