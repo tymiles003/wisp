@@ -7,9 +7,18 @@ Rails.application.routes.draw do
   get 'contact' => "pages#contact"
 
 
-constraints subdomain: 'www' do
-    get ':any', to: redirect(subdomain: nil, path: '/%{any}'), any: /.*/
+#constraints subdomain: 'www' do
+#    get ':any', to: redirect(subdomain: nil, path: '/%{any}'), any: /.*/
+#  end
+
+before_filter :redirect_subdomain
+
+def redirect_subdomain
+  if request.host == 'www.wisp-net.org'
+    redirect_to 'https://wisp-net.org' + request.fullpath
   end
+end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
