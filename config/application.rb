@@ -11,7 +11,7 @@ Bundler.require(*Rails.groups)
 module Wisp
   class Application < Rails::Application
 
-    config.force_ssl = true
+    config.force_ssl = (ENV["ENABLE_HTTPS"] == "yes")
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

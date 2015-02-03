@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
 	def redirect_subdomain
 	  if request.host == 'www.wisp-net.org'
-	    redirect_to 'https://wisp-net.org' + request.fullpath
+	    redirect_to 'wisp-net.org' + request.fullpath
 	  end
 	end
 
