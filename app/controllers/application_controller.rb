@@ -11,9 +11,7 @@ class ApplicationController < ActionController::Base
 	  if request.host == 'www.wisp-net.org'
 	    redirect_to 'https://wisp-net.org' + request.fullpath
 	  end
-	  if request.host == 'wisp-net.org'
-	    redirect_to 'https://wisp-net.org' + request.fullpath
-	  end
+	
 	end
 
 private
