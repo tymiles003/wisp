@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   resources :jobs
 
   root 'pages#home'
-  get 'privacy' => "pages#privacy"
-  
+  get 'about' => "pages#about"
+  get 'contact' => "pages#contact"
 
 
 
