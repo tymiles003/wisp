@@ -7,27 +7,27 @@ class ApplicationController < ActionController::Base
   #before_filter :redirect_subdomain
   #before_filter :https_redirect
 
-	def redirect_subdomain
-	  puts "request host is " + request.host
-	  if request.host == 'www.wisp-net.org'
-	    redirect_to 'http://wisp-net.org' + request.fullpath, status: :moved_permanently
-	  end
-	end
+#	def redirect_subdomain
+#	  puts "request host is " + request.host
+#	  if request.host == 'www.wisp-net.org'
+#	    redirect_to 'http://wisp-net.org' + request.fullpath, status: :moved_permanently
+#	  end
+#	end
 
-private
+#private
 
-	def https_redirect 
-		if ENV["ENABLE_HTTPS"] == "yes"
-			if request.ssl? && !use_https? || !request.ssl? && use_https?
-				protocol = request.ssl? ? "http" : "https"
-				flash.keep
-				redirect_to protocol: "#{protocol}://", status: :moved_permanently
-			end
-		end
-	end
-
-	def use_https?
-		true # override in other controllers
-	end
+#	def https_redirect 
+#		if ENV["ENABLE_HTTPS"] == "yes"
+#			if request.ssl? && !use_https? || !request.ssl? && use_https?
+#				protocol = request.ssl? ? "http" : "https"
+#				flash.keep
+#				redirect_to protocol: "#{protocol}://", status: :moved_permanently
+#			end
+#		end
+#	end
+#
+#	def use_https?
+#		true # override in other controllers
+#	end
 
 end
