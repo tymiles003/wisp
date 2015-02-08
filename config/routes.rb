@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'privacy' => "pages#privacy"
   
+  
 
 
 

@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   #before_filter :https_redirect
 
 	def redirect_subdomain
+	  puts "request host is " + request.host
 	  if request.host == 'www.wisp-net.org'
 	    redirect_to 'https://wisp-net.org' + request.fullpath, status: :moved_permanently
 	  end
