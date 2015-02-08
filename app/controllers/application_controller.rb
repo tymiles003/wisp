@@ -4,13 +4,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
 
-  before_filter :redirect_subdomain
+  #before_filter :redirect_subdomain
   #before_filter :https_redirect
 
 	def redirect_subdomain
 	  puts "request host is " + request.host
 	  if request.host == 'www.wisp-net.org'
-	    redirect_to 'https://wisp-net.org' + request.fullpath, status: :moved_permanently
+	    redirect_to 'http://wisp-net.org' + request.fullpath, status: :moved_permanently
 	  end
 	end
 
