@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
-  <title>Wisp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-        
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
 
-  <meta name="google-site-verification" content="9hwVHRCtcbflp7vLwva_JNpfI6FfXp4n0_jEPHeNaYw" />
+	<title>Women in Security and Privacy || WISP</title>
+  		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  		<%= csrf_meta_tags %>
+
+  
+  <!-- 
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+-->
+
+ 	 <meta name="google-site-verification" content="9hwVHRCtcbflp7vLwva_JNpfI6FfXp4n0_jEPHeNaYw" />
+
 </head>
+
+
+
 <body>
+	<%= render 'layouts/header' %>
+			<div class="blank-row"></div>
+			<div class="wrapper">
+				<div class = "container">
+					<% flash.each do |name, msg| %>      
+					<%= content_tag(:div, msg, class: "alert alert-info") %> 
+					<% end %>
 
-	<div class="wrapper">
-	<div class = "container">
-	<% flash.each do |name, msg| %>      
-	<%= content_tag(:div, msg, class: "alert alert-info") %> 
-<% end %>
-	</div>
-</div>
+					<%= yield %>
+				</div>
+			</div>
 
-<%= yield %>
+			<div class="blank-row"></div>
+			<div class="blank-row"></div>
+
+	<%= render 'layouts/footer' %>
 
 </body>
+
+
 </html>
