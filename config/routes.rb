@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  resources :women
+
   devise_for :users
   resources :jobs
 
   root 'pages#home'
   get 'privacy' => "pages#privacy"
+  get 'events' => "pages#events"
+  get 'board' => "pages#board"
   
   
 

@@ -82,7 +82,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #for devise/heroku
-  config.action_mailer.default_url_options = { :host => 'http://nameless-citadel-6179.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'http://wisp-net.herokuapp.com/' }
 
 
 end

@@ -3,6 +3,15 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 
+#foo {
+  font-size: 36px;
+  text-align: center;
+}
+.odometer {
+  cursor: default;
+}
+
+
 
 /* Links */
 a,
@@ -234,6 +243,13 @@ body {
   }
 }
 
+ul {
+	list-style-type: None;
+}
+
 .bigger-font {
 	font-size: 20px;
 }
+
+
+
