@@ -11,8 +11,30 @@
   cursor: default;
 }
 
+.title-text {
+  text-align: Center;
+  font-size: 50px;
+}
 
+.panel
+{
+  float: Left;
+  padding: 30px;
+  border: 20px solid #000000;
+  margin: 50px;
+  text-align: Center;
+}
 
+ul {
+ 
+ list-style-type: None;
+ margin: 0;
+ padding: 0;
+}
+
+.panel-font {
+  font-size: 25px;
+}
 /* Links */
 
 a:focus,
