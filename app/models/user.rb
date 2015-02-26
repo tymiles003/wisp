@@ -6,4 +6,8 @@ class User < ActiveRecord::Base
 
 has_many :jobs
 
+has_many :women
+
+has_many :events
+
 end

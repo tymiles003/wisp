@@ -9,6 +9,9 @@
                   <li><%= link_to 'Events', events_path %></li>
                   <li><%= link_to 'Board', board_path %></li>
                   <li><a href="#section2">Contact</a></li>
+                  <% if user_signed_in? %>           
+                  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>         
+
                 </ul>
               </nav>
             </div>
