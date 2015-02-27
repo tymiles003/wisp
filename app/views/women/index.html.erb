@@ -2,40 +2,40 @@
     <h3>BOARD MEMBERS</h3>
 </div>
 
-<div class="left-margin row">
-  <% if user_signed_in? %>
-<p>
-<%= link_to 'New Woman', new_woman_path %>
-</p>
-</div>
-
-  <% end %>
+    <div class="left-margin row">
+        <% if user_signed_in? %>
+          <p>
+            <%= link_to 'New Woman', new_woman_path %>
+          </p>
+        <% end %>
+    </div>
 
 <div class="row">
     <% @women.each do |woman| %>     
     
         <div class="box circular">
-          <div id="image-wrapper">
-          <span itemprop="photo"><%= link_to image_tag(woman.image.url(:medium)), woman, class: "blur" %>
-           </span>
+            <div id="image-wrapper">
+                <span itemprop="photo"><%= link_to image_tag(woman.image.url(:medium)), woman, class: "blur" %>
+              </span>
           
-           <span class="image-text"> 
-              <p><span itemprop="name">
-                <%= woman.name %>
-              </span></p>
-          </span>
-        </div>
+              <span class="image-text"> 
+                  <p>
+                    <span itemprop="name">
+                      <%= woman.name %>
+                    </span>
+                  </p>
+              </span>
+            </div>
 
         <% if user_signed_in? %>
 
              <p><%= link_to 'Edit', edit_woman_path(woman) %></p>
              <p><%= link_to 'Destroy', woman, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-       <% end %>
-      </div>     
+        <% end %>
+        </div>     
     <% end %>
 </div>
-</div>
 
-</div>
+<div class="blank-row"></div>
 
 
