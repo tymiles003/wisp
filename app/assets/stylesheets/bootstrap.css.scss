@@ -82,6 +82,10 @@ a:hover {
 			font-family: 'Lato', sans-serif;
 			
 		}		
+
+    .btn.btn-start > a {
+      color: #000000;
+    }
 		.btn.btn-start:hover{
 			background: rgba(0,0,0, 0.5);
 			color:#fff;
@@ -106,6 +110,8 @@ a:hover {
 			font-family: 'Lato', sans-serif;
 			
 		}		
+
+
 		.button:hover{
 			background: rgba(0,0,0, 0.5);
 			color:#fff;
