@@ -13,7 +13,7 @@
 
 <div class="row">
     <% @women.each do |woman| %>     
-    <div class="col-md-4">
+    
         <div class="box circular">
           <div id="image-wrapper">
           <span itemprop="photo"><%= link_to image_tag(woman.image.url(:medium)), woman, class: "blur" %>
