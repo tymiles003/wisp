@@ -1,14 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-@import url(http://fonts.googleapis.com/css?family=Cabin);
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 
-#foo {
-  font-size: 36px;
-  text-align: center;
-}
-.odometer {
-  cursor: default;
+.event-box{
+  margin-left: 214px;
 }
 
 .title-text {
@@ -16,11 +12,22 @@
   font-size: 50px;
 }
 
+.left-margin {
+  margin-left: 100px;
+}
+
+.red {
+  color: Red;
+  font-size: 30px;
+}
+
+
+
 .panel
 {
-  float: Left;
+  float: inline-block;
   padding: 30px;
-  border: 20px solid #000000;
+  border: 15px solid #000000;
   margin: 50px;
   text-align: Center;
 }
@@ -122,7 +129,7 @@ a:hover {
 body {
   background-color: #FFFFFF;
   color: #000000;
-  
+  font-family: 'Lato', 'sans-serif';
 }
 
 

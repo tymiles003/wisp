@@ -11,27 +11,32 @@
           <div class="inner cover">
           	
          
-		
-			
-			<div id="myTarget">22DDE036539479B1FAC0DE7B92A4968F747BE128</div>
+		<div class="row title-text">
+			<h2><span id="some-id">22DDE036539479B1FAC0DE7B92A4968F747BE128</span></h2>
+		</div>
 			
 	
 		
 
 
-            <p class="bigger-font">WISP aims to advance women in the privacy and security industries by providing advocacy, networking, mentoring, and leadership development.</p>
-            <p class="bigger-font">
-			We are a group of women in privacy and security who aim to:
-			<ul class="bigger-font">
+            <h2>WISP aims to advance women in the privacy and security industries by providing advocacy, networking, mentoring, and leadership development.</h2>
+            <hr>
+		      	<h3 class="red">We are a group of women in privacy and security who aim to:</h3>
+		
+    	<ul class="bigger-font">
 				<li>Increase representation of women in these industries;</li>
+        <p></p>
 				<li>Build a trusted community of advocates, mentors, and partners;</li>
+        <p></p>
 				<li>Advance leadership opportunities; and</li>
+        <p></p>
 				<li>Drive innovation through exchange of ideas and best practices.</li>
 			</ul>
-			</p>
+			
             <div class="quarter-row"></div>
             <p class="lead">
-              <a href="#" class="btn btn-start btn-lg btn-default">Join Us</a>
+              <span class="btn btn-start btn-lg btn-default"><%= link_to 'JOIN US', contact_path %></span>
+              
             </p>
           </div>
 
@@ -56,7 +61,50 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
    
-	
+	 <script>
+    var CoolTextEffect = {
+      generateRandomString: function(length) {
+
+        var string = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for(var i=0; i < length-1; i++ ) {
+            string += possible.charAt(Math.floor(Math.random() * possible.length));
+        }
+
+        return string;
+      },
+      execute: function(id, text, speed) {
+
+        //get the target element
+        var element = document.getElementById(id);
+        var shownText;
+
+        var remaining = text.length;
+
+        var that = this;
+        var interval = setInterval(function() {
+          shownText = that.generateRandomString(remaining);
+
+          //show text
+          element.innerHTML = text.substring(0, text.length - remaining + 1) + shownText;
+
+
+          remaining--;
+
+          if(remaining <= 0) {
+            clearInterval(interval);
+          }
+
+        }, speed)
+      }
+    };
+
+  
+   //use this!
+    CoolTextEffect.execute("some-id", "Women in Security and Privacy", 100);
+
+  </script>
 	
  
 

@@ -1,15 +1,24 @@
 <div class="row title-text">
-<h1>UPCOMING PRIVACY EVENTS</h1>
+<h2>UPCOMING PRIVACY EVENTS</h2>
 </div>
+
+<div class="left-margin row">
+  <% if user_signed_in? %> 
+<%= link_to 'New Event', new_event_path %>
+<% end %>
+</div>
+
 
 <div class="row">
 <div class="col-md-12">
 
   
-    
+
+<div class="event-box">    
   <div class="box">
       <% @events.each do |event| %>
         
+      <div class="col-md-12">
          <h1><%= event.name %></h1>
         
 
@@ -21,13 +30,13 @@
           <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
         <% end %>
         </p>  
+</div>
       <% end %>
   </div>
+</div>
 
-  <% if user_signed_in? %> 
-<%= link_to 'New Event', new_event_path %>
-<% end %>
-    
+
+
 
 
 
