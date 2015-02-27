@@ -15,10 +15,10 @@
   
 
 <div class="event-box">    
-  <div class="box">
+  <div class="col-md-12">
       <% @events.each do |event| %>
         
-      <div class="col-md-12">
+      
          <h1><%= event.name %></h1>
         
 
@@ -30,7 +30,7 @@
           <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
         <% end %>
         </p>  
-</div>
+
       <% end %>
   </div>
 </div>
