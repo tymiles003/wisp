@@ -1,18 +1,21 @@
 
 
 <p>
-  <strong>Description:</strong>
+  <strong class="bold">Title:</strong>
+  <p></p>
   <%= @job.description %>
 </p>
 
 <p>
-  <strong>Website:</strong>
-  <%= @job.website %>
+  <strong class="bold">Info:</strong>
+  <p></p>
+  <%= @job.info %>
 </p>
 
 <p>
-  <strong>Info:</strong>
-  <%= @job.info %>
+  <strong class="bold">Website:</strong>
+  <p></p>
+  <%= link_to @job.website %>
 </p>
 
 <%= link_to 'Edit', edit_job_path(@job) %> |

@@ -1,37 +1,49 @@
 
 
 <p>
-  <strong>Name:</strong>
+  <strong class="bold">Name:</strong>
+  <p></p>
   <%= @event.name %>
 </p>
 
+<p></p>
 <p>
-  <strong>Description:</strong>
+  <strong class="bold">Description:</strong>
+  <p></p>
   <%= @event.description %>
   <p></p>
   <%= @event.info %>
 </p>
 
+<p></p>
 <p>
-  <strong>Speakers:</strong>
+  <strong class="bold">Speakers:</strong>
+  <p></p>
   <%= @event.speakers %>
 </p>
 
+<p></p>
 <p>
-  <strong>Sponsor:</strong>
+  <strong class="bold">Sponsor:</strong>
+  <p></p>
   <%= @event.sponsor %>
 </p>
 
+<p></p>
 <p>
-  <strong>Location:</strong>
+  <strong class="bold">Location:</strong>
+  <p></p>
   <%= @event.location %>
 </p>
 
+<p></p>
 <p>
-  <strong>Tickets:</strong>
+  <strong class="bold">Tickets:</strong>
+  <p></p>
   <%= link_to @event.tickets %>
 </p>
 
+<p></p>
 <% if user_signed_in? %> 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
