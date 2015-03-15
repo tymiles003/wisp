@@ -8,8 +8,14 @@
 <p>
   <strong>Description:</strong>
   <%= @event.description %>
+  <p></p>
+  <%= @event.info %>
 </p>
 
+<p>
+  <strong>Speakers:</strong>
+  <%= @event.speakers %>
+</p>
 
 <p>
   <strong>Sponsor:</strong>
@@ -19,6 +25,11 @@
 <p>
   <strong>Location:</strong>
   <%= @event.location %>
+</p>
+
+<p>
+  <strong>Tickets:</strong>
+  <%= @event.tickets %>
 </p>
 
 <% if user_signed_in? %> 
