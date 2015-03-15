@@ -359,13 +359,13 @@ visibility:visible;
 
 
 .circular img {
-  width: 300px;
-  height: 200px;
+  width: 300px !important;
+  height: 200px !important;
   float: right;
-  background-size: cover;
-  display: Inline;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
+  background-size: cover !important;
+  display: Inline !important;
+  -webkit-border-radius: 150px !important;
+  -moz-border-radius: 150px !important;
   background: no-repeat;
     
 }
