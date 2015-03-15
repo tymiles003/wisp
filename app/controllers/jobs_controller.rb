@@ -5,28 +5,25 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.all
+    @jobs = Job.all.order('created_at DESC')
   end
 
-  # GET /jobs/1
-  # GET /jobs/1.json
   def show
   end
 
-  # GET /jobs/new
+  
   def new
-    @job = current_user.jobs.build
+    @job = Job.new
     
   end
 
-  # GET /jobs/1/edit
+
   def edit
   end
 
-  # POST /jobs
-  # POST /jobs.json
+  
   def create
-    @job = current_user.jobs.build(job_params)
+    @job = Job.new(job_params)
     
 
     respond_to do |format|
@@ -40,8 +37,7 @@ class JobsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /jobs/1
-  # PATCH/PUT /jobs/1.json
+
   def update
     respond_to do |format|
       if @job.update(job_params)
@@ -54,8 +50,7 @@ class JobsController < ApplicationController
     end
   end
 
-  # DELETE /jobs/1
-  # DELETE /jobs/1.json
+ 
   def destroy
     @job.destroy
     respond_to do |format|

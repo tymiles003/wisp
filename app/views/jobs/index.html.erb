@@ -1,29 +1,43 @@
-<h1>Listing jobs</h1>
+<div class="row title-text">
+<h3>Opportunities</h3>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Website</th>
-      <th>Info</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @jobs.each do |job| %>
-      <tr>
-        <td><%= job.description %></td>
-        <td><%= job.website %></td>
-        <td><%= job.info %></td>
-        <td><%= link_to 'Show', job %></td>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+<div class="left-margin row">
+  <% if user_signed_in? %> 
 <%= link_to 'New Job', new_job_path %>
+<% end %>
+</div>
+
+
+<div class="row">
+<div class="col-md-12">
+
+  
+
+<div class="event-box">    
+  <div class="col-md-12">
+      <% @jobs.each do |job| %>
+        
+      
+         <h1><%= job.description %></h1>
+        
+
+      <p>
+          <%= link_to 'More Information', job %>
+          
+         <% if user_signed_in? %> 
+          <%= link_to 'Edit', edit_job_path(job) %>
+          <%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+        </p>  
+
+      <% end %>
+  </div>
+</div>
+
+
+
+
+
+
+</div>

@@ -11,38 +11,42 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
-  <div class="field">
+  
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: "form-control" %>
   </div>
-   <div class="field">
+  <p></p>
+   <div class="form-group">
     <%= f.label :info %><br>
-    <%= f.text_field :info %>
+    <%= f.text_field :info, class: "form-control" %>
   </div>
-  <div class="field">
+  
+  <div class="form-group">
     <%= f.label :speakers %><br>
-    <%= f.text_field :speakers %>
+    <%= f.text_field :speakers, class: "form-control" %>
   </div>
- <div class="field">
+ <div class="form-group">
     <%= f.label :location %><br>
-    <%= f.text_field :location %>
+    <%= f.text_field :location, class: "form-control" %>
   </div>
-   <div class="field">
+   <div class="form-group">
     <%= f.label :sponsor %><br>
-    <%= f.text_field :sponsor %>
+    <%= f.text_field :sponsor, class: "form-control" %>
   </div>
  
-   <div class="field">
+   <div class="form-group">
     <%= f.label :tickets %><br>
     <%= f.text_field :tickets %>
   </div>
  
- 
+ <p></p>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "button" %>
   </div>
+ <p></p>
 <% end %>
