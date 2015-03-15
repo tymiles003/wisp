@@ -95,5 +95,7 @@ Rails.application.configure do
 } 
 }
 
+  #active admin css
+  config.assets.precompile += ['active_admin.css']
 
 end
