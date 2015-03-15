@@ -27,7 +27,7 @@
               </span>
             </div>
 
-        <% if user_signed_in? %>
+        <% if user_signed_in? == current_admin_user %>
 
              <p><%= link_to 'Edit', edit_woman_path(woman) %></p>
              <p><%= link_to 'Destroy', woman, method: :delete, data: { confirm: 'Are you sure?' } %></p>
