@@ -347,7 +347,7 @@ ul {
 	font-size: 20px;
 }
 
-#image-wrapper {
+#image-wrapper .image-text {
 position:relative;
 bottom:100px;
 text-align: Center;
@@ -356,11 +356,11 @@ width: 100%;
 visibility:hidden;
 color: #fff;
 font-family: 'Lato', 'sans-serif';
-font-size: 20px;
+font-size: 8px;
 background: rgba(0,0,0, 0.5);
 }
 
-#image-wrapper:hover {
+#image-wrapper:hover .image-text {
 visibility:visible;
 
 }
