@@ -10,7 +10,8 @@
                   <li><%= link_to 'Board', women_path %></li>
                   <li><%= link_to 'Join Us', contact_path %></li>
                   <% if user_signed_in? %>           
-                  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>         
+                  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>        
+                   
                   <% end %>
                 </ul>
               </nav>

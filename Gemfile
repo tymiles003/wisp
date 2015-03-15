@@ -15,7 +15,7 @@ gem 'devise'
 gem 'newrelic_rpm'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '~> 1.20.0'
-
+gem 'activeadmin', github: 'activeadmin'
 
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
