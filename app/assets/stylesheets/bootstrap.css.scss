@@ -347,7 +347,7 @@ ul {
 	font-size: 20px;
 }
 
-#image-wrapper .image-text {
+#image-wrapper {
 position:relative;
 bottom:100px;
 text-align: Center;
@@ -360,7 +360,7 @@ font-size: 20px;
 background: rgba(0,0,0, 0.5);
 }
 
-#image-wrapper:hover .image-text {
+#image-wrapper:hover {
 visibility:visible;
 
 }
