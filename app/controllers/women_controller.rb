@@ -10,6 +10,7 @@ class WomenController < ApplicationController
 
   
   def show
+    
   end
 
   
