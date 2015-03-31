@@ -8,20 +8,21 @@
 </p>
 
 
- <strong class="bold">Description:</strong>
+ <strong class="bold">Company:</strong>
   <p></p>
-  <%= @job.description %>
+  <%= simple_format(@job.description) %>
 </p>
 
+<strong class="bold">Summary:</strong>
 <p>
   <p></p>
-  <%= @job.info %>
+  <%= simple_format(@job.info) %>
 </p>
 
 <p>
   <strong class="bold">Requirements:</strong>
   <p></p>
-  <%= @job.reqs %>
+  <%= simple_format(@job.reqs) %>
 </p>
 
 <p>
