@@ -1,4 +1,4 @@
-
+<div class="show">
 
 <p>
 	<%= image_tag @woman.image.url(:medium)  %> 
@@ -19,7 +19,10 @@
   <%= @woman.status %>
 </p>
 
+
 <% if user_signed_in? %> 
 <%= link_to 'Edit', edit_woman_path(@woman) %> |
 <%= link_to 'Back', women_path %>
 <% end %>
+
+</div>
