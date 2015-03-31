@@ -1,21 +1,40 @@
 
 
 <p>
-  <strong class="bold">Title:</strong>
+ 
+ <strong class="bold">Title:</strong>
+  <p></p>
+  <%= @job.title %>
+</p>
+
+
+ <strong class="bold">Description:</strong>
   <p></p>
   <%= @job.description %>
 </p>
 
 <p>
-  <strong class="bold">Info:</strong>
   <p></p>
   <%= @job.info %>
 </p>
 
 <p>
+  <strong class="bold">Requirements:</strong>
+  <p></p>
+  <%= @job.reqs %>
+</p>
+
+<p>
+  <strong class="bold">Contact:</strong>
+  <p></p>
+  <%= mail_to @job.contact, @job.contact, target: '_blank' %>
+</p>
+
+
+<p>
   <strong class="bold">Website:</strong>
   <p></p>
-  <%= link_to @job.website %>
+  <%= link_to @job.website, @job.website, target: '_blank' %>
 </p>
 
 <%= link_to 'Edit', edit_job_path(@job) %> |
