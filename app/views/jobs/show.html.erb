@@ -40,8 +40,9 @@
 </p>
 
 
-
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>
+<% if user_signed_in? %> 
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
+<% end %>
 </div>
 </div>
