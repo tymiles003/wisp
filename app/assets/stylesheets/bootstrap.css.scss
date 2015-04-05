@@ -3,6 +3,84 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 
+
+//Scrolling CSS Animations
+
+
+#scroll {
+  margin-top:50px;
+  margin-bottom: 50px;
+  text-align:center;
+}
+
+#scroll img {
+  postiion:relative;
+}
+
+.animate {
+  transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+
+  animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s; 
+}
+
+#woman-grey.animate {
+transform: translate(10em,0);
+-moz-transform: translate(10em,0);
+-webkit-transform: translate(10em,0);
+}
+
+#woman-red.animate {
+transform: translate(5em,0);
+-moz-transform: translate(5em,0);
+-webkit-transform: translate(5em,0);
+}
+
+#woman-orange.animate {
+transform: translate(-5em,0);
+-moz-transform: translate(-5em,0);
+-webkit-transform: translate(-5em,0);
+}
+
+#woman-darkgrey.animate {
+transform: translate(-10em,0);
+-moz-transform: translate(-10em,0);
+-webkit-transform: translate(-10em,0);
+}
+
+#users.animate {
+transform: translate(-10em,0);
+-moz-transform: translate(-10em,0);
+-webkit-transform: translate(-10em,0);
+}
+
+#calendar.animate {
+transform: translate(10em,0);
+-moz-transform: translate(10em,0);
+-webkit-transform: translate(10em,0);
+}
+
+
+
+
+//Rest of CSS
+
+#user-effect {
+  margin-left: -7em;
+}
+
+#event-effect {
+  margin-left: 7em;
+}
+
+
 .event-box{
   margin-left: 214px;
 }
@@ -19,6 +97,7 @@
   color: Black !important;
 }
 
+
 .left-margin {
   margin-left: 100px;
 }
@@ -28,7 +107,13 @@
   font-size: 30px;
 }
 
+.calendar {
+  margin-left: 300px;
+}
 
+.users-text {
+  margin-left: -310px;
+}
 
 .panel
 {
@@ -63,6 +148,10 @@ a:hover {
 
 .quarter-row {
 	height: 25px;
+}
+
+#float-left {
+ display: inline-block;
 }
 
 /* Custom default button */

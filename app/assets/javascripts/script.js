@@ -15,3 +15,23 @@ $(function(){
     shuff();
   }
 });
+
+
+
+    $(window).scroll(function(event) {
+
+      var y = $(this).scrollTop();
+
+       if (y >= 300) {
+          $('#woman-grey').addClass('animate');
+          $('#woman-orange').addClass('animate');
+          $('#woman-red').addClass('animate');
+          $('#woman-darkgrey').addClass('animate');
+       }
+
+      if (y >= 550) {
+          $('#users').addClass('animate');
+          $('#calendar').addClass('animate');
+      }
+    });
+
