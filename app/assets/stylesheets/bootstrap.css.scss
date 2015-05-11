@@ -291,7 +291,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding: 5px;
 }
 
 
@@ -304,16 +304,17 @@ body {
  	width: 100%;
  }
 .masthead-brand {
-  margin-top: -10px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .masthead-nav > li {
   display: inline-block;
-  margin-top: -10px;
+  
 }
 .masthead-nav > li + li {
   margin-left: 20px;
+  margin-top: 10px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
