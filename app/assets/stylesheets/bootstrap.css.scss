@@ -292,6 +292,7 @@ body {
 /* Padding for spacing */
 .inner {
   padding: 5px;
+  margin-top: -10px;
 }
 
 
@@ -314,7 +315,7 @@ body {
 }
 .masthead-nav > li + li {
   margin-left: 20px;
-  margin-top: 10px;
+
 }
 .masthead-nav > li > a {
   padding-right: 0;
