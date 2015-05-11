@@ -4,6 +4,8 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 
 
+
+
 //Scrolling CSS Animations
 
 
@@ -302,7 +304,7 @@ body {
  	width: 100%;
  }
 .masthead-brand {
-  margin-top: 10px;
+  margin-top: -10px;
   margin-bottom: 10px;
 }
 
@@ -343,6 +345,8 @@ body {
     float: right;
   }
 }
+
+
 
 
 /*
@@ -387,7 +391,7 @@ body {
   .mastfoot {
     
     bottom: 0;
-    padding-top: 50px;
+    padding-top: 10px;
     display: block;
     position: relative;
 
@@ -423,7 +427,7 @@ body {
 
 /* Set the fixed height of the footer here */
 #footer {
-  height: 60px;
+  height: 40px;
   
 }
 
