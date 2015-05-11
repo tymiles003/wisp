@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
 
   #before_filter :redirect_subdomain
   #before_filter :https_redirect
+  #before_filter :set_time_zone
 
 #	def redirect_subdomain
 #	  puts "request host is " + request.host
@@ -29,5 +30,11 @@ class ApplicationController < ActionController::Base
 #	def use_https?
 #		true # override in other controllers
 #	end
+
+
+#    def set_time_zone
+#      Time.zone = current_user.time_zone
+#    end
+
 
 end

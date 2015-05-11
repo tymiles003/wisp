@@ -17,8 +17,12 @@
   </div>
 
 <div class="form-group">
-   <%= f.date_select :starts_at %>
-   <%= f.time_select :starts_at, :ignore_date => true, class: "form-control" %>
+  <%= f.label :date %><br>
+   <%= f.date_select :startsat, class: "form-control" %>
+   <br>
+   <br>
+   <%= f.label :time %><br>
+   <%= f.time_select :startsat, :ignore_date => true, class: "form-control" %>
 </div>
   
   <div class="form-group">
