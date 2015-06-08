@@ -18,8 +18,13 @@ gem 'aws-sdk', '~> 1.20.0'
 gem 'activeadmin', github: 'activeadmin'
 
 
+
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
+
+group :development do
+  gem 'brakeman', :require => false
+end
 
 
 group :development, :test do      
